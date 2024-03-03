@@ -71,9 +71,121 @@ body {
 
 .banner {
   min-height: calc(100vh - 101px);
-  background: url("../img/pageBcg/bannerbg.jpg");
+  background: url("../img/pageBcg/luxury-furniture.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+/* services */
+.service-icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--mainYellow);
+  background: var(--mainGrey);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+}
+/* categories */
+.categories-link {
+  color: var(--mainBlack);
+  text-decoration: none;
+}
+.categories-link:hover {
+  color: var(--mainGrey);
+  text-decoration: none;
+}
+.categories-underline {
+  height: 0.1rem;
+  width: 5rem;
+  background: var(--mainYellow);
+}
+.category-container {
+  position: relative;
+}
+.category-img {
+  transition: all 1s linear;
+}
+.category-container:hover .category-img {
+  opacity: 0.5;
+}
+.category-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.2rem 3rem 0.2rem 0.2rem;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  opacity: 0;
+  transition: all 1s linear;
+  text-decoration: none !important;
+}
+.category-link:hover {
+  color: var(--mainGrey);
+}
+.category-container:hover .category-link {
+  opacity: 1;
+}
+/* home filler */
+.home-filler {
+  min-height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-filler.jpg") center/cover fixed no-repeat;
+}
+.collection-link {
+  color: var(--mainYellow);
+  text-decoration: none !important;
+}
+.collection-link:hover {
+  color: var(--mainGrey);
+  text-decoration: none !important;
+}
+.collection-underline {
+  height: 0.1rem;
+  width: 5rem;
+  background: var(--mainYellow);
+  margin: 0 auto;
+}
+/* featured section */
+.featured-container {
+  background: var(--TransGrey);
+  position: relative;
+  overflow: hidden;
+}
+.featured-search-icon {
+  background: var(--mainWhite);
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 1.2rem;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.featured-container:hover .featured-search-icon {
+  transform: translateX(0%);
+}
+.featured-store-link {
+  background: var(--mainYellow);
+  color: var(--mainBlack);
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+}
+.featured-store-link:hover {
+  color: var(--mainBlack);
+}
+.featured-container:hover .featured-store-link {
+  transform: translateX(0%);
+}
+
+.old-price {
+  text-decoration: line-through;
 }
